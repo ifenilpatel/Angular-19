@@ -1,0 +1,46 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <div class="pt-4 pb-2">
+      <h5 class="card-title pb-0 fs-4">Create Your Account!</h5>
+    </div>
+
+    <form class="row g-3" autocomplete="off" ngNativeValidate>
+      <!-- First Name -->
+      <div class="col-6">
+        <label for="firstName" class="form-label">First Name</label>
+        <input id="firstName" type="text" class="form-control" placeholder="Enter your first name" aria-label="First name" required />
+      </div>
+
+      <!-- Last Name -->
+      <div class="col-6">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input id="lastName" type="text" class="form-control" placeholder="Enter your last name" aria-label="Last name" required />
+      </div>
+
+      <!-- Email -->
+      <div class="col-12">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" type="email" class="form-control" placeholder="Enter your email" aria-label="Email" required />
+      </div>
+
+      <!-- Password -->
+      <div class="col-12">
+        <label for="password" class="form-label">Password</label>
+        <input id="password" type="password" class="form-control" placeholder="Enter your password" aria-label="Password" required />
+      </div>
+
+      <!-- Register Button -->
+      <div class="col-12">
+        <button class="btn btn-primary w-100" type="submit">Register</button>
+      </div>
+
+      <!-- Login Link -->
+      <div class="col-12">
+        <p class="small mb-0">
+          Have an account?
+          <a [routerLink]="['/']" href="/">Sign in now.</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>

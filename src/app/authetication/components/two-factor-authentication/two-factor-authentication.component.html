@@ -1,0 +1,33 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <div class="pt-4 pb-2">
+      <h5 class="card-title pb-0 fs-4">Verify Your Account!</h5>
+    </div>
+
+    <form class="row g-3" autocomplete="off" ngNativeValidate>
+      <!-- Verification Code Input -->
+      <div class="col-12">
+        <label for="verificationCode" class="form-label">Verification Code</label>
+        <input id="verificationCode" type="text" class="form-control" placeholder="Enter verification code" aria-label="Verification code" required />
+      </div>
+
+      <!-- Verify Button -->
+      <div class="col-6">
+        <button class="btn btn-primary w-100" type="submit" aria-label="Submit the verification code">Verify Code</button>
+      </div>
+
+      <!-- Resend Button -->
+      <div class="col-6">
+        <button class="btn btn-light w-100" type="button" aria-label="Resend verification code">Resend Code</button>
+      </div>
+
+      <!-- Back to Login -->
+      <div class="col-12">
+        <p class="small mb-0">
+          Already have access?
+          <a [routerLink]="['/']" href="/" aria-label="Go back to login page">Back to login.</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
